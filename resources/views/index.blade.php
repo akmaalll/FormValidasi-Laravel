@@ -9,7 +9,7 @@
   <body>
     <div class="container my-5">
         <h2>Data Pegawai</h2>
-        <a href="#"><button type="button" class="btn btn-primary">Tambah</button></a>
+        <a href="{{ Route('tambah.pegawai') }}"><button type="button" class="btn btn-primary">Tambah</button></a>
         <table class="table">
             <thead>
               <tr>

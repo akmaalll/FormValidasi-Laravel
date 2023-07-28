@@ -13,6 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('tambah');
-});
+
+Route::get('/', "App\Http\Controllers\PegawaiController@index")->name('index.pegawai');
+Route::get('/', "App\Http\Controllers\PegawaiController@tambah")->name('tambah.pegawai');
