@@ -16,7 +16,3 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-
-Route::get('/', "App\Http\Controllers\PegawaiController@index")->name('index.pegawai');
-Route::get('/tambah', "App\Http\Controllers\PegawaiController@tambah")->name('tambah.pegawai');
-Route::post('/store', "App\Http\Controllers\PegawaiController@store")->name('store.pegawai');
